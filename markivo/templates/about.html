@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="section-padding">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
+        <div style="flex: 1; min-width: 300px;">
+            <h1 class="section-title" style="text-align: left;">Who is <span>Markivo?</span></h1>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #ccc; margin-bottom: 2rem;">
+                Founded at the intersection of creativity and code, Markivo is a digital powerhouse dedicated to pushing the boundaries of what a marketing agency can be. We don't just build websites; we build digital ecosystems that breathe and grow.
+            </p>
+            <div class="glass" style="padding: 1.5rem; border-left: 4px solid var(--primary-color);">
+                <p><em>"Our mission is to illuminate brands in the crowded digital dark using neon-sharp strategies and crystal-clear data."</em></p>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <div class="glass" style="padding: 3rem; border-radius: 50% 20% 50% 20%;">
+                <h2 style="font-size: 4rem; color: var(--secondary-color);">10+</h2>
+                <p>Years of Innovation</p>
+                <h2 style="font-size: 4rem; color: var(--primary-color); margin-top: 1rem;">500+</h2>
+                <p>Projects Launched</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding" style="background: rgba(255,255,255,0.02);">
+    <h2 class="section-title">Our <span>Workflow</span></h2>
+    <div class="grid-container">
+        <div class="service-card glass">
+            <h3>1. Discovery</h3>
+            <p>We dive deep into your brand identity and market competition.</p>
+        </div>
+        <div class="service-card glass">
+            <h3>2. Strategy</h3>
+            <p>We draft a custom blueprint involving SEO, UI, and Funnel design.</p>
+        </div>
+        <div class="service-card glass">
+            <h3>3. Execution</h3>
+            <p>Our developers and marketers bring the vision to life with clean code.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

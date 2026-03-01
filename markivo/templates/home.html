@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero glass">
+    <h1>Transform Your <br> <span>Digital Presence</span></h1>
+    <p>Markivo is a premium digital agency crafting glass-shattering marketing strategies and neon-bright web solutions.</p>
+    <div class="cta-group">
+        <a href="{{ url_for('services') }}" class="btn-main">Our Services</a>
+        <a href="{{ url_for('packages') }}" class="btn-secondary" style="border: 1px solid var(--primary-color); padding: 0.6rem 1.5rem; border-radius: 30px; text-decoration: none; color: #fff; margin-left: 1rem;">View Pricing</a>
+    </div>
+</section>
+
+<section class="section-padding">
+    <h2 class="section-title">What We <span>Do</span></h2>
+    <div class="grid-container">
+        <div class="service-card glass">
+            <div class="service-icon">🚀</div>
+            <h3>SEO Optimization</h3>
+            <p>Rank #1 on Google with our data-driven SEO strategies.</p>
+        </div>
+        <div class="service-card glass">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Pixel-perfect designs that convert visitors into customers.</p>
+        </div>
+        <div class="service-card glass">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Fast, secure, and scalable websites built on modern stacks.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

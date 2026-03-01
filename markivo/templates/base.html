@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markivo | {% block title %}Digital Marketing{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="pic.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="glass">
+        <div class="logo">MARKIVO</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('services') }}">Services</a></li>
+            <li><a href="{{ url_for('packages') }}">Packages</a></li>
+            <li><a href="{{ url_for('blogs') }}">Blog</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('login') }}" class="btn-main">Client Login</a></li>
+        </ul>
+        </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>&copy; 2024 Markivo - Digital Marketing & Web Solutions</p>
+        <p>Contact us: support@markivo.com</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
