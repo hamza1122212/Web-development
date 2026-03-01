@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaming Desktop Blog – Latest gaming tips, setup guides, and tech articles.">
+    <title>Blog | Gaming Desktop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="/" class="nav-logo">GAMING<span>DESKTOP</span></a>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li class="dropdown"><a href="/products" class="dropdown-toggle">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/products#keyboards"><i class="fas fa-keyboard"></i> Keyboards</a></li>
+                        <li><a href="/products#mice"><i class="fas fa-computer-mouse"></i> Gaming Mouse</a></li>
+                        <li><a href="/products#headsets"><i class="fas fa-headset"></i> Headsets</a></li>
+                        <li><a href="/products#chairs"><i class="fas fa-chair"></i> Gaming Chairs</a></li>
+                        <li><a href="/products#monitors"><i class="fas fa-desktop"></i> Monitors</a></li>
+                        <li><a href="/products#accessories"><i class="fas fa-gamepad"></i> Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="/packages">Packages</a></li>
+                <li><a href="/blogs" class="active">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="nav-cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="/login" class="nav-auth-btn">Sign In</a>
+                <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3><button class="cart-close"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h4>Total</h4><span class="total-price">$0.00</span>
+            </div><button class="btn btn-primary">Checkout <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <div class="container">
+            <span class="section-tag"><i class="fas fa-newspaper"></i> Our Blog</span>
+            <h1>Gaming <span class="gradient-text">Articles</span></h1>
+            <p>Expert guides, reviews, and tips to level up your gaming experience</p>
+            <div class="breadcrumb"><a href="/">Home</a><span>/</span><span>Blog</span></div>
+        </div>
+    </div>
+
+    <!-- BLOGS -->
+    <section>
+        <div class="container">
+            <div class="blogs-grid reveal">
+                <!-- Blog 1 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">🎮</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 15, 2026</span>
+                            <span><i class="fas fa-user"></i> Jason Chen</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Best Gaming Setup for 2026: The Ultimate Guide</h3>
+                        <p>Building the perfect gaming setup in 2026 means balancing performance, aesthetics, and
+                            comfort. From 4K OLED monitors to wireless peripherals with zero latency, this guide covers
+                            every component you need for a championship-tier battle station. We break down the essential
+                            categories — display, audio, input devices, seating, and ambient lighting — with specific
+                            product recommendations and budget tiers so whether you are spending $500 or $5,000 you get
+                            the most value for your money.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">🖱️</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 10, 2026</span>
+                            <span><i class="fas fa-user"></i> Elena Martinez</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>How to Choose the Perfect Gaming Mouse</h3>
+                        <p>Your mouse is the most important weapon in your gaming arsenal. This comprehensive guide
+                            covers sensor technology (optical vs laser), DPI settings and why higher is not always
+                            better, weight preferences for different game genres, grip styles (palm, claw, fingertip),
+                            wireless vs wired latency myths, and the top-rated mice of 2026 across FPS, MOBA, and MMO
+                            categories. We also cover how to properly configure your sensitivity for competitive play.
+                        </p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">🌈</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 5, 2026</span>
+                            <span><i class="fas fa-user"></i> Ryan Kim</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>RGB vs Non-RGB Setup – What's Actually Better?</h3>
+                        <p>The RGB debate rages on in the gaming community. Is RGB worth the premium price tag, or is it
+                            just flashy lights with no practical benefit? We analyze the psychological impact of ambient
+                            lighting on focus and immersion, power consumption differences, long-term reliability, and
+                            customization options. We also showcase real gamer setups on both sides of the spectrum and
+                            let the results speak for themselves with before-and-after productivity and comfort scores.
+                        </p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 4 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">💰</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 28, 2026</span>
+                            <span><i class="fas fa-user"></i> Laura Phillips</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Building a Budget Gaming Station Under $500</h3>
+                        <p>Premium gaming does not require a premium budget. This step-by-step guide shows you how to
+                            build a complete gaming station for under $500 without sacrificing performance where it
+                            matters most. We prioritize components by impact-per-dollar — starting with input devices
+                            that directly affect gameplay, moving to audio, then comfort, and finally aesthetics.
+                            Includes a downloadable shopping checklist and links to the best deals available right now.
+                        </p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 5 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">🎬</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 20, 2026</span>
+                            <span><i class="fas fa-user"></i> Jason Chen</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>Streaming Setup Guide for Beginners</h3>
+                        <p>Ready to start streaming on Twitch, YouTube, or Kick? This beginner-friendly guide walks you
+                            through everything: choosing the right microphone and webcam, configuring OBS Studio for
+                            optimal quality, setting up alerts and overlays, internet speed requirements, lighting tips
+                            for a professional look, and hardware upgrades that actually make a difference. We also
+                            cover common mistakes new streamers make and how to grow your audience from day one.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 6 -->
+                <div class="blog-card glass-card">
+                    <div class="blog-image" style="display:flex;align-items:center;justify-content:center">
+                        <span style="font-size:5rem">⌨️</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 12, 2026</span>
+                            <span><i class="fas fa-user"></i> Elena Martinez</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Mechanical vs Membrane Keyboards: The Definitive Comparison</h3>
+                        <p>The keyboard is where your hands spend most of their time, making it one of the most personal
+                            choices in your setup. We compare mechanical and membrane keyboards across every metric:
+                            actuation force, key travel distance, durability, noise levels, typing speed, gaming
+                            response time, and price. Includes switch type guides for Cherry MX, Gateron, and Kailh,
+                            plus our top picks in both categories for gaming, typing, and hybrid use.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content reveal">
+                <h2>🎮 Join the Gaming Squad</h2>
+                <p>Get exclusive deals, early access to new drops, and pro gaming tips delivered to your inbox.</p>
+                <form class="newsletter-form"><input type="email" placeholder="Enter your email address"
+                        required><button type="submit" class="btn btn-primary">Subscribe</button></form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">GAMINGDESKTOP</div>
+                    <p>Your ultimate destination for premium gaming accessories.</p>
+                    <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i
+                                class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a
+                            href="#"><i class="fab fa-discord"></i></a><a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/packages">Packages</a></li>
+                        <li><a href="/blogs">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="/products#keyboards">Keyboards</a></li>
+                        <li><a href="/products#mice">Gaming Mouse</a></li>
+                        <li><a href="/products#headsets">Headsets</a></li>
+                        <li><a href="/products#chairs">Gaming Chairs</a></li>
+                        <li><a href="/products#monitors">Monitors</a></li>
+                        <li><a href="/products#accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaming Desktop. All rights reserved. Built with 🎮 for gamers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
